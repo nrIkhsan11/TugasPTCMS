@@ -223,9 +223,9 @@ class Repositories @Inject constructor(private val remoteDataSource: RemoteDataS
         try {
             remoteDataSource.deletePersonalList(listId, sessionId).let {
                 if (it.isSuccessful) {
-                    val list = it.body()
-                    emit(list)
-                    Log.e("Tag", list.toString())
+                    val personalList = it.body()
+                    emit(personalList)
+                    Log.e("Tag", personalList.toString())
                 }
             }
         } catch (e: Exception) {
