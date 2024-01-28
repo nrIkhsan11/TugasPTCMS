@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarRating"
+        app:navigationIcon="@drawable/round_close_24"
+        app:titleTextAppearance="@style/custom_toolbar"
+        app:title="Add rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RatingBar
+        android:layout_marginTop="10dp"
+        android:id="@+id/rating_movie"
+        android:stepSize="0.5"
+        android:numStars="10"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:isIndicator="false"
+        style="@android:style/Widget.Holo.Light.RatingBar.Indicator"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_delete_rating"
+            android:text="@string/delete_rating"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="13sp"
+            app:backgroundTint="@color/red"
+            app:cornerRadius="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_submit_rating"
+            android:layout_marginStart="10dp"
+            android:text="@string/submit_rating"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="13sp"
+            app:cornerRadius="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

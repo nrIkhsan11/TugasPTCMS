@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.activity.AuthActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:text="@string/welcome_to_the_tmdb_movie_application"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_marginTop="30dp"
+            android:hint="@string/input_your_username"
+            android:paddingHorizontal="12dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="15sp"
+            android:background="@drawable/bg_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_marginTop="20dp"
+            android:hint="@string/input_your_password"
+            android:paddingHorizontal="12dp"
+            android:inputType="textPassword"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="15sp"
+            android:background="@drawable/bg_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login"
+            app:cornerRadius="10dp"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="13sp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/don_t_have_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_joint_tmdb"
+                android:textSize="13sp"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/purple_700"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/join_tmdb_movie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

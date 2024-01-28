@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="custom_text_nav_bar">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="custom_toolbar">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="custom_text_search">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+</resources>

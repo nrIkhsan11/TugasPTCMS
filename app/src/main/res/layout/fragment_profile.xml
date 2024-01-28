@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ui.profile.ProfileFragment">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_profile"
+        android:layout_marginTop="10dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+    <TextView
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/img_profile"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:id="@+id/tv_username"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/img_profile"
+        android:layout_below="@id/tv_username"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/tv_name"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_logout"
+        android:layout_below="@id/img_profile"
+        android:layout_marginTop="20dp"
+        android:text="@string/logout"
+        android:textSize="13sp"
+        android:textAllCaps="false"
+        app:cornerRadius="10dp"
+        app:backgroundTint="@color/red"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tv_list"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:text="@string/lists"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="18sp"
+        android:layout_below="@id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_rating"
+        android:layout_below="@id/tv_list"
+        app:strokeWidth="1dp"
+        app:cornerRadius="10dp"
+        app:strokeColor="@color/purple_500"
+        app:backgroundTint="@color/white"
+        app:icon="@drawable/round_star_24"
+        app:iconTint="@color/purple_500"
+        app:iconGravity="end"
+        android:gravity="start|center"
+        android:text="@string/rating_movies"
+        app:rippleColor="@color/purple_500"
+        android:textColor="@color/purple_500"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_create_list"
+        app:cornerRadius="10dp"
+        android:layout_below="@id/btn_rating"
+        android:layout_marginTop="10dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/purple_700"
+        app:backgroundTint="@color/white"
+        app:icon="@drawable/round_playlist_add_24"
+        app:iconTint="@color/purple_700"
+        app:iconGravity="end"
+        android:gravity="start|center"
+        android:text="@string/create_personal_list"
+        app:rippleColor="@color/purple_700"
+        android:textColor="@color/purple_700"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+
+</RelativeLayout>

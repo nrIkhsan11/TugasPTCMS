@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.DetailMovieActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        app:navigationIcon="@drawable/round_arrow_back_24"
+        android:id="@+id/toolbar_detail_movie"
+        app:menu="@menu/toolbar_detail_movies_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvOriginalTitle"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_medium"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/toolbar_detail_movie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_backdrop_path"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="145dp"
+                android:id="@+id/img_poster_path"
+                android:scaleType="fitXY"
+                android:layout_width="110dp"
+                android:layout_height="165dp"/>
+
+            <LinearLayout
+                android:layout_above="@id/btn_rating"
+                android:paddingHorizontal="10dp"
+                android:layout_toEndOf="@id/img_poster_path"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:maxLines="3"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvReleasedate"
+                    android:fontFamily="@font/poppins_medium"
+                    android:maxLines="3"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_rating"
+                android:layout_marginTop="25dp"
+                android:text="@string/_0_0"
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                app:cornerRadius="10dp"
+                app:backgroundTint="@color/white"
+                android:textColor="@color/purple_700"
+                app:iconTint="@color/purple_700"
+                app:strokeColor="@color/purple_700"
+                app:strokeWidth="1dp"
+                app:rippleColor="@color/purple_500"
+                android:fontFamily="@font/poppins_medium"
+                app:icon="@drawable/round_star_24"
+                app:iconGravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/img_poster_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_add_to"
+                android:layout_marginTop="25dp"
+                android:text="Add to personal list"
+                android:layout_toEndOf="@id/btn_rating"
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                app:cornerRadius="10dp"
+                app:backgroundTint="@color/white"
+                android:textColor="@color/purple_700"
+                app:iconTint="@color/purple_700"
+                app:strokeColor="@color/purple_700"
+                app:strokeWidth="1dp"
+                app:rippleColor="@color/purple_500"
+                android:fontFamily="@font/poppins_medium"
+                app:icon="@drawable/round_playlist_add_24"
+                app:iconGravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/img_poster_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvTagline"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/btn_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvOverview"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/tvTagline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvTrailers"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_below="@id/tvOverview"
+                android:text="@string/trailers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:id="@+id/rvTrailers"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/tvTrailers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

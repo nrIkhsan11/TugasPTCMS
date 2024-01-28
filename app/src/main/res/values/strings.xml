@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Tugas PT CMS</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="watchlist">Personal list</string>
+    <string name="profile">Profile</string>
+    <string name="welcome_to_the_tmdb_movie_application">Welcome to the TMDB MOVIE application</string>
+    <string name="input_your_username">Input your username...</string>
+    <string name="input_your_password">Input your password...</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_account">Don\'t have account?</string>
+    <string name="join_tmdb_movie">Join TMDB MOVIE</string>
+    <string name="search">Search</string>
+    <string name="title">Title</string>
+    <string name="overview">Overview</string>
+    <string name="logout">Logout</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="create_personal_list">Create personal list</string>
+    <string name="rating_movies">Rating movies</string>
+    <string name="lists">Lists</string>
+    <string name="personal_list_name">Personal list name...</string>
+    <string name="personal_list_description">Personal list description...</string>
+    <string name="personal_list">Personal list</string>
+    <string name="_0">0</string>
+    <string name="share">Share</string>
+    <string name="homepage">Homepage</string>
+    <string name="release_date">Release date</string>
+    <string name="trailers">Trailers</string>
+    <string name="add_rating">Add rating</string>
+    <string name="submit_rating">Submit rating</string>
+    <string name="_0_0">0.0</string>
+    <string name="delete_rating">Delete rating</string>
+</resources>
